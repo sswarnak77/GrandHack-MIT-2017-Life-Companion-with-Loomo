@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SpeechSample</string>
+    <string name="bind_service">bind\n service</string>
+    <string name="unbind_service">unbind\n service</string>
+    <string name="start_recognition">start\nrecognition</string>
+    <string name="stop_recognition">stop\nrecognition</string>
+    <string name="start_speaking">start\n speaking</string>
+    <string name="stop_speaking">Stop\n speaking</string>
+    <string name="start_listening">start\n listening</string>
+    <string name="stop_listening">stop\n listening</string>
+    <string name="enabled">beam forming enabled</string>
+    <string name="disabled">beam forming disabled</string>
+    <string name="tips">Tips\n#wakeup words: \"ok loomo\" \"hello loomo\" \"loomo loomo\" \n\n#recognition:\n 1) [\"play\" | \"close\" | \"pause\"][\"the music\" | \"the video\"]
+    \n sample:\"play the music\" or \"pause the video\"\n\n
+        2) [\"turn\" | \"move\"] {\"to the\"} [\"right\" | \"left\"] \n
+    sample: \"turn right\" or \"move to the left\n"</string>
+    <string name="status">status</string>
+    <string name="close_beam_forming">beam forming listening finish</string>
+    <string name="start_beam_forming">start to save beam forming raw data\n which saved in the sdcard
+    </string>
+    <string name="disconnect">recognition service and speaker service both disconnect!</string>
+    <string name="recognition_connected">the recognition service is connected\n</string>
+    <string name="recognition_disconnected">recognition service disconnected\n</string>
+    <string name="speaker_connected">the speaker service is connected\n</string>
+    <string name="speaker_disconnected">speaker service disconnected\n</string>
+</resources>

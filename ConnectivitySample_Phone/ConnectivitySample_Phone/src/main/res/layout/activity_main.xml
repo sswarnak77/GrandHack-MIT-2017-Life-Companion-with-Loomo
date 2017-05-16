@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.segway.robot.mobilesample.MainActivity">
+
+
+    <Button
+        android:id="@+id/button_send_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="send string"/>
+
+
+    <Button
+        android:id="@+id/button_send_byte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_send_string"
+        android:layout_alignParentStart="true"
+        android:text="send bytes"/>
+
+    <TextView
+        android:id="@+id/message_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#d6d7d7"
+        android:text="message sent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/message_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_received"
+        android:text="id:"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#defed3"
+        android:text="id"
+        android:textColor="#000000"
+        android:layout_below="@+id/message_id"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#defed3"
+        android:text="timestamp"
+        android:textColor="#000000"
+        android:layout_below="@+id/message_timestamp"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="content:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_time"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"
+        android:id="@+id/message_content"/>
+
+    <TextView
+        android:id="@+id/textView_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#defed3"
+        android:text="content"
+        android:textColor="#000000"
+        android:layout_below="@+id/message_content"
+        android:textSize="15sp"
+        android:scrollbars="vertical"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editText_context"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#defed3"
+        android:hint="hello"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_below="@+id/message_sent"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editView_input_ip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#defed3"
+        android:hint="you can get ip from robot sample"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_below="@+id/robot_ip"
+        android:imeOptions="flagNoExtractUi"
+        android:digits="0123456789."
+        android:inputType="number"
+        android:maxLength="15"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/message_received"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6d7d7"
+        android:text="message received"
+        android:textSize="15sp"
+        android:layout_below="@+id/editView_input_ip"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="timstamp:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/message_timestamp"
+        android:layout_below="@+id/textView_id"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="bind service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_bind"
+        android:layout_above="@+id/button_send_byte"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/robot_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6d7d7"
+        android:text="input robot ip:"
+        android:textSize="15sp"
+        android:layout_below="@+id/editText_context"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
